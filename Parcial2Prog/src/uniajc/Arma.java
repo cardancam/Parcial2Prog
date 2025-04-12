@@ -12,7 +12,7 @@ public class Arma {
     public void atacarConArma(){
         
     }
-    public void getDañodicional(){
+    public void getDañoAdicional(){
         
     }
 }
