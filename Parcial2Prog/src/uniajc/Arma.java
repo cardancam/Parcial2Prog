@@ -1,8 +1,8 @@
 package uniajc;
 
 public class Arma {
-    String nombreArma;
-    int daño;
+    private String nombreArma;
+    private int daño;
 
     public Arma(String nombreArma, int daño) {
         this.nombreArma = nombreArma;
