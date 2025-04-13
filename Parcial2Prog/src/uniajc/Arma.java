@@ -25,11 +25,8 @@ public class Arma {
         this.daño = daño;
     }
     
-    
-    public void atacarConArma(Criatura objetivo){
-        
+    public void atacarConArma(Criatura objetivo, int fuerzaBase) {
+        objetivo.defender(fuerzaBase + getDaño());
     }
-    public int getDañoAdicional(){
-        return daño;
-    }
+       
 }

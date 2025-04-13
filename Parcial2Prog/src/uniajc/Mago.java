@@ -17,7 +17,7 @@ public class Mago extends Criatura implements Magico {
     public void aprenderHechizo() {
         System.out.println("El mago aprendio el hechizo bola de fuego");
     }  
-
+  
     @Override
     public void atacar(Criatura objetivo) {
         
