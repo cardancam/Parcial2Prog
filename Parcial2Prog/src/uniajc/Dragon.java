@@ -1,6 +1,7 @@
 package uniajc;
 
 public class Dragon extends Criatura implements Volador {
+
     private String escamas;
     private Arma arma;
 
@@ -15,8 +16,12 @@ public class Dragon extends Criatura implements Volador {
 
     @Override
     public void atacar(Criatura objetivo) {
-        int dañoBase = arma != null ? getFuerza() * 2 + arma.getDaño() : getFuerza() * 2;
-        objetivo.defender(dañoBase);
+        int dañoBase;
+        if (arma != null) {
+            dañoBase = getFuerza() + arma.getDaño();
+        } else {
+            dañoBase = getFuerza();
+        }
     }
 
     @Override
