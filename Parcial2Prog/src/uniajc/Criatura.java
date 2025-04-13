@@ -10,11 +10,33 @@ public abstract class Criatura {
         this.fuerza = fuerza;
     }
     
-    public void atacar(Criatura objetivo){
+    public String getNombre() {
+        return nombre;
     }
-    public int defender (int daño){
-        return daño;
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
+
+    public int getSalud() {
+        return salud;
+    }
+
+    public void setSalud(int salud) {
+        this.salud = salud;
+    }
+
+    public int getFuerza() {
+        return fuerza;
+    }
+
+    public void setFuerza(int fuerza) {
+        this.fuerza = fuerza;
+    }
+        
+    public abstract void atacar(Criatura objetivo);
+    public abstract int defender (int daño);
+    
     public boolean estaViva(){
         return salud > 0;
     }
