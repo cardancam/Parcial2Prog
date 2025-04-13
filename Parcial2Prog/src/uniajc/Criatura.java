@@ -9,7 +9,6 @@ public abstract class Criatura {
         this.salud = salud;
         this.fuerza = fuerza;
     }
-
     public String getNombre() {
         return nombre;
     }
@@ -17,7 +16,7 @@ public abstract class Criatura {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
+  
     public int getSalud() {
         return salud;
     }
