@@ -8,11 +8,25 @@ public class Arma {
         this.nombreArma = nombreArma;
         this.daño = daño;
     }
+
+    public String getNombreArma() {
+        return nombreArma;
+    }
+
+    public void setNombreArma(String nombreArma) {
+        this.nombreArma = nombreArma;
+    }
+
+    public int getDaño() {
+        return daño;
+    }
+
+    public void setDaño(int daño) {
+        this.daño = daño;
+    }
     
-    public void atacarConArma(){
-        
+    public void atacarConArma(Criatura objetivo, int fuerzaBase) {
+        objetivo.defender(fuerzaBase + getDaño());
     }
-    public void getDañoAdicional(){
-        
-    }
+       
 }
