@@ -7,9 +7,8 @@ public class Mago extends Criatura implements Magico {
     private Arma arma;
     private int energia;
 
-    public Mago(String nombre, int salud, int fuerza, int energia) {
+    public Mago(String nombre, int salud, int fuerza) {
         super(nombre, salud, fuerza);
-        this.energia = energia;
         this.nombreHechizo = null;
     }
 
