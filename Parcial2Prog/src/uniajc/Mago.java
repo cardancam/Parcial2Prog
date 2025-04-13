@@ -1,9 +1,11 @@
 package uniajc;
 
 public class Mago extends Criatura implements Magico {
+    private String hechizos;
 
-    public Mago(String nombre, int salud, int fuerza) {
+    public Mago(String hechizos, String nombre, int salud, int fuerza) {
         super(nombre, salud, fuerza);
+        this.hechizos = hechizos;
     }
 
     @Override
@@ -14,25 +16,16 @@ public class Mago extends Criatura implements Magico {
     @Override
     public void aprenderHechizo() {
         System.out.println("El mago aprendio el hechizo bola de fuego");
-    }
-    
+    }  
+
     @Override
-    public boolean estaViva() {
-        return super.estaViva();
+    public void atacar(Criatura objetivo) {
+        
     }
 
     @Override
     public int defender(int daño) {
-        
-        return super.defender(daño);
+        daño -= 2;
+        return daño;
     }
-
-    @Override
-    public void atacar(Criatura objetivo) {
-        super.atacar(objetivo);
-        
-        
-    }
-    
-    
 }
