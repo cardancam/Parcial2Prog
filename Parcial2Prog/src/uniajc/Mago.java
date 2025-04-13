@@ -21,11 +21,7 @@ public class Mago extends Criatura implements Magico {
         return super.estaViva();
     }
 
-    @Override
-    public int defender(int daño) {
-        
-        return super.defender(daño);
-    }
+    
 
     @Override
     public void atacar(Criatura objetivo) {
